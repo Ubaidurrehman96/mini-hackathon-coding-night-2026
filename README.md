@@ -1,6 +1,6 @@
 # 🎉 Mini Hackathon Coding Night 2026
 
-Welcome to the official repository of the **Mini Hackathon Coding Night 2026** held at **Zaiton Ashrat IT Park**.
+Welcome to the official repository of the **Mini Hackathon Coding Night 2026** held at **Zaiton Ashraf IT Park**.
 
 This is a fully responsive static website built using **HTML and CSS**, designed for a coding event where participants can explore different sections and event details in a modern UI layout.
 
@@ -42,7 +42,7 @@ This website is created for a mini hackathon event and includes multiple pages s
 ## 📍 Event Details
 
 **Event Name:** Mini Hackathon Coding Night 2026  
-**Location:** Zaiton Ashrat IT Park  
+**Location:** Zaiton Ashraf IT Park  
 **Type:** Coding / Development Hackathon  
 
 ---
