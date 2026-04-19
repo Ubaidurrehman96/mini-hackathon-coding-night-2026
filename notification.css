@@ -1,0 +1,349 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f6fb;
+      font-family: system-ui, 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+      padding: 2rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .dashboard-container {
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+      background: #f4f6fb;
+      border-radius: 28px;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: baseline;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 1.75rem;
+      padding: 0 0.25rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .nav-links span {
+      color: #1e2a3e;
+      cursor: default;
+      transition: 0.2s;
+    }
+
+    .nav-links span:first-child {
+      color: #0f3b5f;
+      font-weight: 600;
+      border-bottom: 2px solid #0f3b5f;
+      padding-bottom: 4px;
+    }
+
+    .nav-links span:not(:first-child) {
+      color: #5c6f87;
+      font-weight: 500;
+    }
+
+    .notif-badge {
+      background: white;
+      padding: 0.3rem 0.9rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1f3b4c;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .live-header {
+      margin: 1.5rem 0 1.2rem 0;
+    }
+
+    .live-header h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #0b2b3b;
+      letter-spacing: -0.2px;
+      display: inline-block;
+      background: linear-gradient(135deg, #1e4663, #0f344b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .live-header h2::before {
+      content: "⚡";
+      font-size: 1.6rem;
+      background: none;
+      -webkit-background-clip: unset;
+      color: #f5a623;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .notification-feed {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .notif-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1.1rem 1.3rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+      transition: all 0.2s ease;
+      border: 1px solid #eef2f8;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .notif-card:hover {
+      border-color: #dce5ef;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .notif-content {
+      flex: 1;
+    }
+
+    .notif-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e2f3f;
+      line-height: 1.4;
+      margin-bottom: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .notif-title strong {
+      font-weight: 700;
+      color: #0b2b3b;
+    }
+
+    .request-text {
+      background: #f0f4fa;
+      padding: 0.15rem 0.4rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1f6392;
+    }
+
+    .type-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      margin-bottom: 6px;
+    }
+
+    .badge-status {
+      background: #eef2ff;
+      border-radius: 40px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      color: #2c5a7a;
+    }
+
+    .badge-match {
+      background: #e6f7ec;
+      color: #1f7840;
+    }
+
+    .badge-request {
+      background: #fff0db;
+      color: #c46f1a;
+    }
+
+    .badge-reputation {
+      background: #e9eef9;
+      color: #375a7a;
+    }
+
+    .badge-insight {
+      background: #ede7fc;
+      color: #6246b3;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .timestamp {
+      font-size: 0.75rem;
+      color: #7a8b9f;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .unread-dot {
+      background: #2e7eb0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .status-unread {
+      font-size: 0.7rem;
+      font-weight: 600;
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 30px;
+      color: #1f6392;
+    }
+
+    .read-status {
+      font-size: 0.7rem;
+      font-weight: 500;
+      background: transparent;
+      color: #8f9eb2;
+      border: 1px solid #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 30px;
+    }
+
+    .notif-extra {
+      min-width: 70px;
+      text-align: right;
+    }
+
+    hr {
+      display: none;
+    }
+
+  
+@media (max-width: 992px) {
+
+  body {
+    padding: 1.5rem;
+  }
+
+  .dashboard-container {
+    border-radius: 20px;
+  }
+
+  .top-nav {
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .live-header h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 1rem;
+  }
+
+  .dashboard-container {
+    border-radius: 15px;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .notif-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .live-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .notif-card {
+    padding: 0.9rem;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notif-title {
+    font-size: 0.9rem;
+  }
+
+  .type-badge {
+    margin-top: 6px;
+  }
+
+  .meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .timestamp {
+    font-size: 0.7rem;
+  }
+
+  .status-unread,
+  .read-status {
+    font-size: 0.65rem;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .live-header h2 {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    font-size: 0.75rem;
+  }
+
+  .notif-title {
+    font-size: 0.85rem;
+  }
+
+}
